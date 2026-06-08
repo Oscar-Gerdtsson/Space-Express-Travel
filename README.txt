@@ -1,7 +1,10 @@
-1. Jag valde grafiska profilen från Wiktoria Rosiak.
+Vilken grafisk profil du har valt?
+Jag valde grafiska profilen från Wiktoria Rosiak.
 
-2. 
+Vilka element du har extraherat i Photoshop och hur du bearbetat dem?
 
-3.
 
-4.
+Hur du säkerställt att webbplatsen följer profilen?
+
+
+Hur du arbetat med HTML och CSS för att bygga strukturen och designen?
