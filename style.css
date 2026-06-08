@@ -46,7 +46,8 @@ nav{
   float: right;
   margin: calc(100vw/60) 0;
 }
-a{/*change this*/
+a{
+  color: white;
   padding: 10px 17px;
   margin: 0 5px;
   font-size: 20px;
