@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Copperplate";
+  src: url(Copperplate.otf);
+}
+@font-face {
+  font-family: "Cambay";
+  src: url(Cambay-Regular.ttf);
+}
+
+
+/* black: #111b27 grey: #72818e blue: #405e7a lightblue: #3b4956 brown: #c59151 orange: #e7b26e beige: #efdfce dark beige: #575757*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  margin: 0;
+  font-family: "Cambay", "Copperplate";
+
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.head{
+  top: 0;
+  z-index: 2;
+  padding-right: calc(100vw/25);
+  width: 100%;
+  height: calc(100vw/6);
+  background: #111B27;
+}
+.head .imgdiv{
+  float: left;
+  margin-top: calc(100vw/40);
+  margin-left: calc(100vw/75);
+  height: 60%;
+  width: auto;
+}
+nav{
+  display: flex;
+  float: right;
+  margin: calc(100vw/60) 0;
+}
+a{/*change this*/
+  padding: 10px 17px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+a:hover, a:visited{color: white;}
+a:active{
+  background-color: #3b4956;
+  border-radius: 1000px;
+}
+#SearchBar{
+  float: right;
+  width: calc(100vw/1.5);
+  height: calc(100vw/20);
+  font-size: calc(100vw/50);
+  box-sizing: border-box;
+  padding-left: calc(100vw/18);
+  border: none;
+  border-radius: 1000px;
+  background-image: url(Neptune.png);
+  background-size: calc(100vw/20) calc(100vw/20);
+  background-repeat: no-repeat;
+}
+
+
+.HomeDiv{
+  padding: 0;
+  width: 100%;
+  height: calc(100vw/2);
+  margin-top: calc(100vw/75);
+  display: grid;
+  grid-template-columns: repeat(30, [col-start] 1fr);
+  grid-template-rows: repeat(5, [row-start] 1fr);
+}
+
+.gAd{
+  grid-column: 1 / span 21;
+  grid-row: 1 / span 2;
+  background-color: #e7b26e;
+  display: flex;
+  justify-content: space-between;
+}
+.gAd p{
+  color: white;
+  margin: auto 0 auto calc(100vw/30);
+  font-size: calc(100vw/20)
+}
+.gAd button{
+  float: right;
+  margin: auto;
+  height: 30%;
+  width: 22%;
+  border-radius: 1000px;
+  border: none;
+  font-size: calc(100vw/55);
+  color: #fff;
+  background-color: #c59151;
+}
+
+.gAstronaut{
+  grid-column: 22 / span 9;
+  grid-row: 1 / span 5;
+  background-color: #555
+}
+.gList{
+  grid-column: 1 / span 8;
+  grid-row: 3 / span 3;
+  background-color: #fff;
+  background-image: url(Star-2.png);
+  background-size: calc(100vw/80) calc(100vw/80);
+  background-repeat: repeat-y;
+}
+.gList ul{
+  margin-left: calc(100vw/60);
+  line-height: 90%;
+  
+}
+.gList li{
+  list-style: none;
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 180%;
+  font-weight: bold;
+}
+
+
+.g2024{
+  grid-column: 9 / span 13;
+  grid-row: 3 / span 3;
+  background-color: #333
+}
+#Destination{
+  margin-top: calc(100vw/75);
+  justify-content: space-between;
+  width: 100%;
+}
+.TravelDiv{
+  float: left;
+  width: calc(100vw/1.85);
+  height: calc(100vw/2.1);
+  background-color: #efdfce;
+  box-sizing: border-box;
+  padding: 2vw;
+  color: #575757;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.TravelDiv input{
+  width: calc(100vw/2.1);
+  height: calc(100vw/19);
+  border: none;
+  border-radius: 1000px;
+  font-size: 1.8vw;
+  color: #575757;
+  margin: 1.5vw;
+  box-sizing: border-box;
+  padding-left: calc(100vw/55);
+}
+.Destination .imgdiv{
+  float: right;
+  width: calc(100vw/2.4);
+  height:auto;
+}
+.Destination > p{
+  float: right;
+  width: calc(100vw/2.4);
+  margin-top: calc(100vw/33);
+  font-size: calc(100vw/80);
+}
+.imgdiv p{
+  font-size: calc(100vw/80);
+  float: left;
+  margin: 0;
+}
+
+footer{
+  clear: both;
+  height: 300px;
+  background-color: #111b27;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+   body{
+     background-color: black;
+   }
+}
+@media (max-width:600px){
+  body{
+  }
+}
